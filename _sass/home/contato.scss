@@ -1,0 +1,111 @@
+#contato{
+    height: 75vh;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    
+    .container{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        position: relative;
+        
+        .box{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        &:first-of-type{
+            
+            .box{
+                
+                &:first-of-type{
+                    
+                    .content{
+                        
+                        p{
+                            font-size: 4em;
+                            font-family: $gThin;
+                            width: 100%;
+                            line-height: 60px;
+                            
+                            b{
+                                font-family: $gUltra;
+                            }
+                        }
+                    }
+                }
+                
+                &:last-of-type{
+                    background: #00aeef;
+                }
+                
+            }
+        }
+        
+        &:last-of-type{
+            
+            .box{
+                
+                &:first-of-type{
+                    @include bgImg('animals_contato.png');
+                    width: 35%;
+                }
+                
+                &:last-of-type{
+                    width: 75%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: normal;
+                    
+                    .row{
+                        width: 100%;
+                        transform: translateX(-100px);
+                        
+                        img{
+                            height: 50px;
+                        }
+                        
+                        &:first-of-type{
+                            display: flex;
+                            justify-content: space-evenly;
+                            align-items: center;
+                            padding: 0 20%;
+                            font-size: 2em;
+                            font-family: $gThin;
+                        }
+                        
+                        &:last-of-type{
+                            display: flex;
+                            justify-content: center;
+                            align-items: normal;
+                            
+                            a{
+                                text-decoration: none;
+                                color: #111;
+                                font-size: 3em;
+                                font-family: $gThin;
+                                
+                                img{ vertical-align: middle; }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .gato{
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 99;
+            height: 100%;
+        }
+    }
+
+}

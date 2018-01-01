@@ -1,3 +1,45 @@
-body{
-    background: #f9f9f9;
+@import 'fonts.scss';
+//fonts
+$gThin: 'Gotham Thin';
+$gMedium: 'Gotham Medium';
+$gUltra: 'Gotham Ultra';
+
+//colors
+$yellow: #f9de15;
+$pink: #f9086a;
+
+*{
+    margin: 0; 
+    outline: none;
+
+    ::-webkit-scrollbar {
+        width: 3px;
+        height: 3px;
+    }
+    ::-webkit-scrollbar-track {
+        background: rgb(240, 240, 240);
+    }     
+    ::-webkit-scrollbar-thumb {
+        background: #555; 
+    }
 }
+
+
+body{
+    cursor: default;
+}
+
+@mixin bgImg($url){
+    background: url('/res/' + $url);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+@import 'home/home.scss';
+@import 'home/sobre.scss';
+@import 'home/agenda.scss';
+@import 'home/parceiros.scss';
+@import 'home/contato.scss';
+@import 'home/footer.scss';
+@import 'home/_mobile.scss';

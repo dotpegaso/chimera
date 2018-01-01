@@ -1,0 +1,128 @@
+#agenda{
+    height: 80vh;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    
+    .panda{
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translate(-65%, 0%);
+    }
+    
+    .container{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        
+        &:first-of-type{
+            
+            .box{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                
+                p{
+                    font-size: 2em;
+                    font-family: $gThin;
+                    width: 100%;
+                    
+                    &:first-of-type{
+                        font-family: $gUltra;
+                        font-size: 3em;
+                    }
+                }
+                
+                &:last-of-type{
+                    background: $pink;
+                }
+            }
+        }
+        
+        &:last-of-type{
+            display: flex;
+            
+            .box{
+                
+                &:first-of-type{
+                    height: 100%;
+                    width: 30%;
+                    @include bgImg('animals_agenda.png');
+                }
+                
+                &:last-of-type{
+                    width: 70%;
+                    display: flex;
+                    
+                    
+                    .event-list{
+                        overflow-y: scroll;
+                        width: 70%;
+                        transform: translateX(150px);
+                        padding: 20px 0;
+                        
+                       
+                        
+                        .item{
+                            padding: 25px 0;
+                            font-family: $gMedium;
+                            
+                            &:not(:last-of-type){
+                                border-bottom: 1px solid #000;
+                            }
+                            
+                            p{
+                                
+                                font-size: 1.5em;
+                                color: #555;
+                                
+                                &:nth-child(1){
+                                    font-size: 2em;
+                                    color: #000;
+                                }
+                                
+                                &:not(:nth-child(1)){
+                                    font-family: $gThin;
+                                }
+                            }
+                            
+                            a{
+                                text-decoration: none;
+                                font-size: 1.5em;
+                                background: #00aeef;
+                                color: #FFF;
+                                padding: 0 5px;
+                            }
+                            
+                            &:nth-child(even){
+                                padding-left: 40px;
+                                
+                                .data{
+                                    width: 80%;
+                                    text-align: right;
+                                }
+                            }
+                        }
+                    }
+                    
+                    
+                }
+            }
+        }
+    }
+    
+}
+
+#agenda ::-webkit-scrollbar {
+    width: 10px;
+}
+#agenda ::-webkit-scrollbar-track {
+    background: #000;
+}     
+#agenda ::-webkit-scrollbar-thumb {
+    background: $yellow; 
+}

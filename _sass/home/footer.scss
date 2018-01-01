@@ -1,0 +1,36 @@
+#rodape{
+    height: 50px;
+    background: #000;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 10px 0;
+    
+    .box{
+        width: 50%;
+        
+        &:first-of-type{
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        
+        &:last-of-type{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            p{ 
+                color: #FFF;
+                font-family: $gMedium;
+                font-size: .8em;
+                
+                a{
+                    text-decoration: none;
+                    color: $pink;
+                }
+            }
+            
+            
+        }
+    }
+}
