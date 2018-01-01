@@ -1,0 +1,80 @@
+#sobre{
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    position: relative;
+    
+    .cow{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    .container{
+        width: 50%;
+        height: 100%;
+        
+        .box{
+            height: 50%;
+            
+            @include bgImg('animals_about.png');
+            
+            &:first-of-type{
+                background: $yellow;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                p{
+                    font-size: 2em;
+                    font-family: $gThin;
+                    
+                    &:first-of-type{
+                        font-family: $gUltra;
+                        font-size: 3em;
+                    }
+                }
+            }
+            
+            &:last-of-type{
+                display: flex;
+                align-items: center;
+                
+                .row{
+                    width: 100%; 
+                        
+                    .strap{
+                        background: $pink;
+                        height: 40px;
+                        width: 65%;
+                        
+                        p{
+                            text-align: right;
+                            font-size: 2em;
+                            font-family: $gUltra;
+                            margin-right: 10px;
+                        }
+                        
+                        &:not(:first-of-type){
+                            margin: 20px 0;
+                        }
+                    }
+                    
+                }
+            }
+        }
+        
+        &:last-of-type{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            img{
+                transform: translateX(-50px);
+                height: 85%;
+            }
+        }
+    }
+}

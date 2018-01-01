@@ -1,0 +1,79 @@
+#parceiros{
+    height: 90vh;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    
+    .container{
+        width: 100%;
+        height: 50%;
+        display: flex;
+        position: relative;
+        
+        .box{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        &:first-of-type{
+            
+            .box{
+                background: $yellow;
+                
+                p{
+                    font-size: 2em;
+                    font-family: $gThin;
+                    width: 100%;
+                    
+                    &:first-of-type{
+                        font-family: $gUltra;
+                        font-size: 3em;
+                    }
+                }
+                
+                &:last-of-type{
+                    @include bgImg('animals_parceiros.png');
+                }
+            }
+        }
+        
+        &:last-of-type{
+           
+           .box{
+               
+               &:last-of-type{
+                   
+                   .logos{
+                       display: flex;
+                       flex-wrap: wrap;
+                       justify-content: center;
+                       transform: translateX(-200px);
+                       
+                       .partner{
+                           height: 100px;
+                           width: 100px;
+                           margin: 20px;
+                           
+                           
+                           img{
+                               width: 100%;
+                               height: 100%;
+                               border-radius: 50%;
+                           }
+                       }
+                   }
+               }
+           } 
+        }
+        
+        .coelho{
+            position: absolute;
+            left: 200px;
+            top: -100px;
+        }
+    }
+}

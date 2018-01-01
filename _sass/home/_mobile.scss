@@ -1,0 +1,292 @@
+@media screen and (max-width: 490px){
+    
+    #home{
+        width: 100%;
+        
+        .sobre{
+            flex-wrap: wrap;
+            
+            .animals, .yellow-block{
+                width: 50%;
+                font-size: 15vw;
+                
+                .center{
+                    margin: 0;
+                }
+            }
+            
+            .logo{
+                top: 20px;
+                left: 50px;
+                
+                img{
+                    height: 40vw;
+                }
+            }
+        }
+        
+        .contato{
+            width: 50%;
+            background-position: right;
+            
+            .container{
+                font-size: 15vw;
+                right: 0;
+                left: 10px;
+            }
+        }
+        
+        .parceiros{
+            width: 50%;
+            
+            p{
+                font-size: 6.5vw;
+                margin: 15px;
+            }
+        }
+        
+        .eventos{
+            width: 100%;
+            
+            p{
+                font-size: 15vw;
+            }
+        }
+    }
+    
+    #sobre{
+        flex-wrap: wrap;
+        height: 100%;
+        
+        .cow{
+            height: 50vw;
+            top: 260px;
+            transform: translate(10%, -50%);
+        }
+        
+        .container{
+            width: 100%;
+            
+            .box{
+                
+                 &:first-of-type{
+                     
+                     padding: 50px 0;
+                    
+                    p{
+                        font-size: 7vw;
+                        
+                        &:first-of-type{
+                            font-size: 10vw;
+                        }
+                    }
+                }
+            
+            }
+            
+            .lorem{
+                transform: unset !important;
+                width: 90%;
+                margin: 20px 0;
+            }
+        }
+        
+        
+        
+    }
+    
+    #agenda{
+        height: 100%;
+        
+        .panda{
+            height: 30vw;
+            transform: translate(75%,-10%);
+        }
+        
+        .container{
+            
+            &:first-of-type{
+                
+                .box{
+                    width: 90%;
+                    
+                    p{
+                        font-size: 7vw;
+                        
+                        &:first-of-type{
+                            font-size: 15vw;
+                        }
+                    }
+                    
+                    &:last-of-type{
+                        width: 10%;
+                        height: 150px;
+                    }
+                }
+            }
+            
+            &:last-of-type{
+                
+                .box{
+                    
+                    &:first-of-type{
+                        height: inherit;
+                    }
+                    
+                    &:last-of-type{
+                        height: 270px;
+                        
+                        .event-list{
+                            transform: none;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    #parceiros{
+        height: 100%;
+        
+        .container{
+            height: inherit;
+            
+            &:first-of-type{
+                
+                .box{
+                    
+                    &:first-of-type{
+                       width: 100%;
+                       padding: 20px;
+                       
+                       p{
+                           font-size: 5vw;
+                           
+                           &:first-of-type{
+                               font-size: 10vw;
+                           }
+                       }
+                    }
+                    
+                    &:last-of-type{
+                        height: 150px;
+                    }
+                }
+            }
+            
+            &:last-of-type{
+                
+                .coelho{
+                    left: 180px;
+                    top: -100px;
+                    width: 30vw;
+                }
+                
+                .box{
+                    
+                    &:first-of-type{
+                        display: none;
+                    }
+                    
+                    &:last-of-type{
+                        width: 100%;
+                        display: block;
+                        
+                        .logos{
+                            transform: none;
+                            padding-top: 50px;
+                            
+                            .partner{
+                                height: 70px;
+                                width: 70px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    #contato{
+        height: 100%;
+        
+        .container{
+            width: 100%;
+            
+            .gato{
+                left: 70%;
+            }
+            
+            &:first-of-type{
+                
+                .box{
+                
+                    &:first-of-type{
+                        width: 90%;
+                        
+                        .content{
+                            padding: 20px 0;
+                            
+                            p{
+                                font-size: 8vw;
+                                line-height: inherit;
+                            }
+                        }
+                    }
+                    
+                    &:last-of-type{
+                        height: 150px;
+                    }
+                }
+            }
+            
+            &:last-of-type{
+                flex-wrap: wrap;
+                
+                .box{
+                    width: 100%;
+                    
+                    &:last-of-type{
+                        padding: 20px 0;
+                        width: 100%;
+                        
+                        .row{
+                            flex-wrap: wrap;
+                            transform: none !important;
+                            padding: 0 !important;
+                            
+                            &:last-of-type{
+                                
+                                a{
+                                    text-align: center;
+                                    width: 100%;
+                                    margin-top: 20px;
+                                    font-size: 8vw;
+                                    
+                                    img{
+                                        width: 100%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    #rodape{
+        height: inherit;
+        
+        .box{
+            
+            &:first-of-type{
+                justify-content: center;
+                width: 30%;
+            }
+        }
+    }
+    
+    
+}
