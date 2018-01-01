@@ -1,4 +1,4 @@
-angular.module('app', ['ngRoute', 'home', 'about'])
+angular.module('app', ['ngRoute', 'home'])
 
 .config(function($routeProvider, $locationProvider){
     
@@ -9,10 +9,6 @@ angular.module('app', ['ngRoute', 'home', 'about'])
             controller: "homeController"
         })
         
-        .when("/about", {
-            templateUrl: "modules/about/index.html",
-            controller: "aboutController"
-        })
         
         .otherwise({redirectTo: "/"});
         

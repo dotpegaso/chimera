@@ -8,13 +8,20 @@
         font-family: $gThin;
     }
     
-    .sobre, .contato, .parceiros, .eventos { height: 45vh; }
+    .sobre .yellow-block, .contato, .parceiros, .eventos { height: 45vh; cursor: pointer; }
     
     .sobre{
         display: flex;
         flex-wrap: nowrap;
         width: 100%;
         position: relative;
+        z-index: 999;
+        
+        animation: fadein 1s;
+        animation-iteration-count: 1s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        animation-delay: 1.5s;
         
         .animals{
             width: 65%;
@@ -22,16 +29,32 @@
         }
         
         .yellow-block{
-            background: $yellow;
+         background-repeat: no-repeat;
+            background-attachment: inherit;
+            background-size: contain;
+            background-position: right;
+            background-color: yellow;
+            background-position-y: 350px;
+            background-blend-mode: luminosity;
             width: calc(100% - 65%);
             font-size: 4em;
             display: flex;
             justify-content: center;
             align-items: center;
+            transition-duration: .3s;
             
             .center{
                 text-align: right;
                 margin-right: 100px;
+            }
+            
+            p{ transition-duration: .2s;}
+            
+            &:hover{
+                background-image: url('/res/peace.png');
+                background-position-y: 60px;
+                transition-duration: .3s;
+                color: $pink;
             }
             
         }
@@ -41,13 +64,27 @@
             z-index: 99;
             top: 50px;
             left: 260px;
+            
+            animation: fadein 1s;
+            animation-iteration-count: 1s;
+            animation-fill-mode: forwards;
+            opacity: 0;
+            animation-delay: 2.7s;
         }
     }
     
     .contato{
         @include bgImg('contato.png');
+        background-attachment: inherit;
         position: relative;
         width: 30%;
+        transition-duration: .3s;
+        
+        animation: fadein 1s;
+        animation-iteration-count: 1s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        animation-delay: 1.8s;
         
         .container{
             color: #FFF;
@@ -57,6 +94,16 @@
             bottom: 40px;
             line-height: 55px;
         }
+        
+        p{ transition-duration: .2s;}
+        
+        &:hover{
+            background-position-x: -1px !important;
+            
+            .container{
+                color: $yellow;    
+            }
+        }
     }
     
     .parceiros{
@@ -65,22 +112,54 @@
         align-items: flex-end;
         width: 20%;
         
+        animation: fadein 1s;
+        animation-iteration-count: 1s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        animation-delay: 2s;
+        
         p{
             color: $yellow;
             font-size: 2.8em;
             margin: 0 20px 20px 20px;
+            transition-duration: .2s;
+        }
+        
+        &:hover{
+            
+            p{
+                color: $pink;
+            }
         }
     }
     
     .eventos{
         font-family: $gUltra;
         @include bgImg('eventos.png');
+        background-attachment: inherit;
         width: 50%;
         color: #FFF;
+        transition-duration: .3s;
+        
+        animation: fadein 1s;
+        animation-iteration-count: 1s;
+        animation-fill-mode: forwards;
+        opacity: 0;
+        animation-delay: 2.2s;
         
         p{
             font-size: 4em;
             margin: 15px;
+            transition-duration: .2s;
+        }
+        
+        &:hover{
+            
+            background-position-x: -1px !important;
+            
+            p{
+                color: $yellow;
+            }
         }
     }
 }
