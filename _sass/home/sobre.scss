@@ -5,6 +5,12 @@
     flex-wrap: nowrap;
     position: relative;
     
+    animation: fadein 1s;
+    animation-iteration-count: 1s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    animation-delay: 2.5s;
+    
     .cow{
         position: absolute;
         top: 50%;
@@ -19,7 +25,7 @@
         .box{
             height: 50%;
             
-            @include bgImg('animals_about.png');
+            @include bgImg('animals.png');
             
             &:first-of-type{
                 background: $yellow;

@@ -5,15 +5,42 @@ angular.module('home', [])
     $scope.email = "email@chimera.com.br";
     
     $scope.parceiros = [
-        '/res/temp/partner1.png',
-        '/res/temp/partner2.png',
-        '/res/temp/partner3.png',
-        '/res/temp/partner4.png',
-        '/res/temp/partner5.png',
-        '/res/temp/partner6.png',
-        '/res/temp/partner7.png',
-        '/res/temp/partner8.png',
-        '/res/temp/partner9.png',
+        {
+            img: '/res/parceiros/hrtbox.png',
+            link: 'https://hrtbox.com.br'
+        },
+        {
+            img:'/res/temp/partner.png',
+            link: '#'
+        },
+        {
+            img:'/res/temp/partner.png',
+            link: '#'
+        },
+        {
+            img:'/res/temp/partner.png',
+            link: '#'
+        },
+        {
+            img:'/res/temp/partner.png',
+            link: '#'
+        },
+        {
+            img:'/res/temp/partner.png',
+            link: '#'
+        },
+        {
+            img:'/res/temp/partner.png',
+            link: '#'
+        },
+        {
+            img:'/res/temp/partner.png',
+            link: '#'
+        },
+        {
+            img:'/res/temp/partner.png',
+            link: '#'
+        }
     ]
     
     $scope.listaEventos = [

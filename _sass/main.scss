@@ -33,9 +33,11 @@ body{
     background: url('/res/' + $url);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
 }
 
-
+@import 'animations.scss';
 @import 'home/home.scss';
 @import 'home/sobre.scss';
 @import 'home/agenda.scss';
