@@ -34,7 +34,7 @@
                 justify-content: center;
                 
                 p{
-                    font-size: 2em;
+                    font-size: 1.2em;
                     font-family: $gThin;
                     
                     &:first-of-type{
@@ -55,12 +55,16 @@
                         background: $pink;
                         height: 40px;
                         width: 65%;
-                        
+                        display: flex;
+                        align-items: center;
+                        justify-content: flex-end;
+                                                
                         p{
                             text-align: right;
-                            font-size: 2em;
+                            font-size: 1em;
                             font-family: $gUltra;
                             margin-right: 10px;
+                            text-transform: uppercase;
                         }
                         
                         &:not(:first-of-type){
@@ -78,8 +82,8 @@
             justify-content: center;
             
             img{
-                transform: translateX(-50px);
-                height: 85%;
+                transform: translateX(2vw);
+                height: 40vw;
             }
         }
     }

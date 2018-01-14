@@ -45,13 +45,15 @@
            
            .box{
                
+               
                &:last-of-type{
+                   width: 80%;
                    
                    .logos{
                        display: flex;
                        flex-wrap: wrap;
                        justify-content: center;
-                       transform: translateX(-200px);
+                       transform: translateX(-4vw);
                        
                        .partner{
                            height: 100px;
