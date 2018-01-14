@@ -34,7 +34,11 @@
                 justify-content: center;
                 
                 p{
+<<<<<<< HEAD
                     font-size: 1.2em;
+=======
+                    font-size: 2em;
+>>>>>>> b117f2345bc94ef2cd136776f0951e89e4c3b63c
                     font-family: $gThin;
                     
                     &:first-of-type{
@@ -55,6 +59,7 @@
                         background: $pink;
                         height: 40px;
                         width: 65%;
+<<<<<<< HEAD
                         display: flex;
                         align-items: center;
                         justify-content: flex-end;
@@ -65,6 +70,14 @@
                             font-family: $gUltra;
                             margin-right: 10px;
                             text-transform: uppercase;
+=======
+                        
+                        p{
+                            text-align: right;
+                            font-size: 2em;
+                            font-family: $gUltra;
+                            margin-right: 10px;
+>>>>>>> b117f2345bc94ef2cd136776f0951e89e4c3b63c
                         }
                         
                         &:not(:first-of-type){
@@ -82,8 +95,13 @@
             justify-content: center;
             
             img{
+<<<<<<< HEAD
                 transform: translateX(2vw);
                 height: 40vw;
+=======
+                transform: translateX(-50px);
+                height: 85%;
+>>>>>>> b117f2345bc94ef2cd136776f0951e89e4c3b63c
             }
         }
     }
