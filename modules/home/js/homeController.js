@@ -8,6 +8,22 @@ angular.module('home', [])
         {
             img: '/res/parceiros/hrtbox.png',
             link: 'https://hrtbox.com.br'
+        },
+        {
+            img: '/res/parceiros/blank.png',
+            link: 'mailto:' + $scope.email + '?subject=Parceria'
+        },
+        {
+            img: '/res/parceiros/blank.png',
+            link: 'mailto:' + $scope.email + '?subject=Parceria'
+        },
+        {
+            img: '/res/parceiros/blank.png',
+            link: 'mailto:' + $scope.email + '?subject=Parceria'
+        },
+        {
+            img: '/res/parceiros/blank.png',
+            link: 'mailto:' + $scope.email + '?subject=Parceria'
         }
     ]
     
