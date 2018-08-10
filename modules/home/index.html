@@ -76,7 +76,7 @@
             <div class="event-list">
                 <div class="item" ng-repeat="evento in listaEventos">
                     <div class="data">
-                        <p>{{ evento.data }} - {{ evento.nome }}</p>
+                        <p>{{ evento.nome }} - {{ evento.data }}</p>
                         <p>{{ evento.local }}</p>
                         <a ng-if="evento.link" href="{{ evento.link }}" target="_blank">COMPRE AQUI</a>
                     </div>

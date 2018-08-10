@@ -29,11 +29,18 @@ angular.module('home', [])
     
     $scope.listaEventos = [
         {
-            nome: 'SAVE THE DATE',
-            data: 'MARÇO',
-            local: 'Em breve',
-            link: ''
-        }
+            nome: 'MAMAMOO',
+            data: '07 DE SET 2018',
+            local: 'FORTALEZA',
+            link: 'https://ticketbrasil.com.br/show/6312-mamamoo-fortaleza-ce/'
+        },
+        {
+            nome: 'MAMAMOO',
+            data: '09 DE SET 2018',
+            local: 'SÃO PAULO',
+            link: 'https://ticketbrasil.com.br/show/6309-mamamoo-saopaulo-sp/'
+        },
+        
     ]
     
     $scope.scroll = function(elem) {
